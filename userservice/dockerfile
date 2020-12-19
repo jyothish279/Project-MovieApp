@@ -1,0 +1,6 @@
+FROM java:8-jre
+WORKDIR usr/src
+ADD ./target/userservice-2.3.3.RELEASE.jar /usr/src/userservice-2.3.3.RELEASE.jar
+ENV MYSQL_CI_URL =jdbc:mysql://localhost:3306/dbname?createDatabaseIfNotExist=true&user=root&password=root
+ENV MYSQL_PASSWORD=root
+ENTRYPOINT ["java","-jar","userservice-2.3.3.RELEASE.jar"]

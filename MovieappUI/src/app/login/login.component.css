@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWKApEzaujjylpLqtoS3ym1yhnEd5c8aGEuQ&usqp=CAU);
+  height: 100vh;
+  background-size:cover;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 340px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.625rem;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+.navbar{
+  background-color: darksalmon !important;
+}
+
+.nav-item{
+  font-size: 20px !important;
+}
+
+.navbar-brand{
+  color: black !important;
+
+}
+button{
+  color: floralwhite !important;
+  background-color: brown !important;
+}
+.text-center{
+  color: bisque !important;
+  font-size: 20px !important;
+}
+
+.text-info{
+  color: deepskyblue !important;
+}
+
+
+.page-footer{
+  background-color: burlywood;
+}
+
+.mat-card{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active{
+  border: 2px !important;
+}
+
+
+.navbar-collapse a.active {
+  border-bottom: 3px solid red;
+}

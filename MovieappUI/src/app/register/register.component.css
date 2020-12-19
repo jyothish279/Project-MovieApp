@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWKApEzaujjylpLqtoS3ym1yhnEd5c8aGEuQ&usqp=CAU);
+    background-size:cover;
+  }
+  #register .container #register-row #register-column #register-box {
+    margin-top: 0px;
+    max-width: 600px;
+    height: 610px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.625rem;
+  }
+  #register .container #register-row #register-column #register-box #register-form {
+    padding: 20px;
+  }
+  #register .container #register-row #register-column #register-box #register-form #register-link {
+    margin-top: -85px;
+  }
+
+
+.page-footer{
+  background-color: burlywood;
+}
+
+.navbar{
+  background-color: lightsalmon !important;
+}
+
+.nav-item{
+  font-size: 20px !important;
+}
+
+button{
+  color: floralwhite !important;
+  background-color: brown !important;
+}
+.text-center{
+  color: deepskyblue !important;
+  font-size: 20px !important;
+}
+
+.text-info{
+  color: deepskyblue !important;
+}
+

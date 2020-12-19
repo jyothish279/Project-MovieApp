@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    network_mode: host
+    container_name: mysql1
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_MY_URL: jdbc:mysql://localhost:3306/moviedb?createDatabaseIfNotExist=true&user=root&password=root
+
+  userservice:
+    image: jyothish279/userservice
+    network_mode: host
+    container_name: userservicecontainer1
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - 9095:9095
+    healthcheck:
+      test: 'exit 0'
+
+  mongo:
+    image: mongo:latest
+    network_mode: host
+    container_name: mongo1
+    environment:
+      MONGO_DB_URL: mongodb://localhost:27017/favdb
+    ports:
+      - 27017:27017
+      
+  favouriteservice:
+    image: jyothish279/favouriteservice
+    container_name: favouriteservicecontainer1
+    network_mode: host
+    restart: always
+    depends_on:
+      - mongo
+    ports:
+      - 9093:9093

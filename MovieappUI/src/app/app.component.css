@@ -1,0 +1,14 @@
+.page-footer{
+  background-color: cornflowerblue;
+  position: relative;
+  clear: both
+}
+
+#sticky-footer {
+  position: relative;
+width: 100%;
+bottom: 0;
+background-color: burlywood !important;
+color: darkblue !important;
+font-size: 150%;
+}

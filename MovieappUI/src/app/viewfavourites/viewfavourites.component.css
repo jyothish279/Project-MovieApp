@@ -1,0 +1,30 @@
+mat-card img{
+    height: 150px; /* adjust as needed */
+    object-fit: contain;
+  }
+
+.example-card{
+  margin-left: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 1.5rem;
+  max-width: 25rem;
+  height: 38rem;
+  margin-top: 3rem !important;
+  border-radius: 10px;
+  box-shadow: 0 0 2px;  
+  
+}
+
+.navbar-default{
+    background-color: bisque !important;
+  }
+
+
+  .navbar{
+    background-color: lightsalmon !important;
+  }
+
+  .clsviewfav{
+    background-color:red !important;
+    color: white !important;
+  }

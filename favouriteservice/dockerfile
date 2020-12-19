@@ -1,0 +1,4 @@
+FROM java:8-jre
+WORKDIR favusr/src
+ADD ./target/favouriteservice-2.3.3.RELEASE.jar /favusr/src/favouriteservice-2.3.3.RELEASE.jar
+ENTRYPOINT ["java","-jar","favouriteservice-2.3.3.RELEASE.jar"]
